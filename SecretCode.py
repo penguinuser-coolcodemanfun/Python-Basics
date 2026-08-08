@@ -1,5 +1,5 @@
 # Part 1: Ask the agent for their details
-
+# Edited Project 
 name = input("Enter your real name, Agent:")
 gadget = input("Enter your favorite gadget:")
 
@@ -39,3 +39,26 @@ print("misson count:", misson_count_text, "-- type: ", type(misson_count_text))
 first_three = name[0:3]
 last_letter = name[-1:]
 code_name = first_three + last_letter
+print("First 3 letters of your name", first_three)
+print("Last letter of your name:", first_three)
+print("Secret Code Name:", code_name)
+
+# Reverse gadget name using slicing
+reversed_gadget = gadget[::-1]
+print("Reversed gadget name:", reversed_gadget)
+
+# Join everything together to to build the final badge message
+badge_line_1 = "AGENT " + code_name.upper()
+badge_line_2 = "ID: " + agent_number_text + " | MISSONS: " + misson_count_text
+badge_line_3 = "SPEED: " + speed_rating_text + " | ACTIVE: " + status_text
+badge_line_4 = "SECRET GADGET CODE " + reversed_gadget.upper()
+
+# Print the complete secret agent badge
+
+print("")
+print("===== SECRET AGENT BADGE =====")
+print(badge_line_1)
+print(badge_line_2)
+print(badge_line_3)
+print(badge_line_4)
+print("==============================")
